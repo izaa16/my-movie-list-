@@ -1,0 +1,43 @@
+@import "./login.scss";
+@import "./header.scss";
+
+html {
+    height:100%;
+    color: rgb(203, 203, 203);
+
+  
+  body {
+      background: linear-gradient(-45deg, #140078, #00052b, #16065e, #0b0043, #1c00a4);
+      background-size: 400% 400%;
+      animation: gradient 5s ease infinite;
+      font-family: 'Audiowide', cursive;
+  }
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+      }
+   }
+   
+   @media (min-width: 390px) {
+    .container {
+      width: 380px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+}
